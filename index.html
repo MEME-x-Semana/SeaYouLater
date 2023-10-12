@@ -9,51 +9,54 @@
 </head>
 
 <body>
-  <header> 
+  <header>
     <!-- Aquí irá la Navbar -->
   </header>
 
   <main>
     <!-- Estructura de la página de inicio -->
     <section class="portada_section">
-      <div class="titulo"><h1>Sea You Later - Tu Agencia de Cruceros</h1></div>
+      <div class="titulo tracking-in-expand">
+        <h1>Sea You Later</h1>
+        <h3>Tu Agencia de Cruceros</h3>
+      </div>
       <img class="img_portada" src="./assets/img/portada_crucero.webp" alt="portada/imagen de un crucero al atardecer">
     </section>
-    
+
     <section>
       <form class="formulario_busqueda">
         <div class="form-div">
           <label for="destino">¿A dónde?</label>
           <input type="text" id="destino" name="destino">
         </div>
-      
+
         <div class="form-div">
           <label for="fecha">¿Cuándo?</label>
           <input type="text" id="fecha" name="fecha">
         </div>
-      
+
         <div class="form-div">
           <label for="puerto-salida">Puerto de salida</label>
           <input type="text" id="puerto-salida" name="puerto-salida">
         </div>
 
-      
+
         <div class="form-div">
           <label for="compania">Compañía</label>
           <input type="text" id="compania" name="compania">
         </div>
-      
+
         <div class="form-div">
           <label for="duracion">¿Duración?</label>
           <input type="text" id="duracion" name="duracion">
         </div>
-      
+
         <div class="form-div">
           <label for="huespedes">Cantidad de huéspedes</label>
           <input type="number" id="huespedes" name="huespedes" min="1" max="10">
         </div>
 
-      
+
         <button type="submit">Buscar</button>
       </form>
     </section>

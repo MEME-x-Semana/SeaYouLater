@@ -1,35 +1,38 @@
 .portada_section {
   position: relative;
   top: 40px;
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Animación desplazamiento lineal (ya que la etiqueta marquee está en desuso */
 
 .titulo {
   position: absolute;
-  margin-top: 5px;
-  white-space: nowrap;
-  animation: marquee 15s linear infinite;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  top: 10px;
+  animation: text-shadow-pop-bottom 2s both;
 }
 
-@keyframes marquee {
+@keyframes text-shadow-pop-bottom {
   0% {
-    transform: translateX(100%);
+    text-shadow: 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c;
+    transform: translateY(0);
   }
   100% {
-    transform: translateX(-100%);
+    text-shadow: 0 0.5px #5555555c, 0 1px #5555555c, 0 1.5px #5555555c, 0 2px #5555555c, 0 2.5px #5555555c, 0 3px #5555555c, 0 3.5px #5555555c, 0 4px #5555555c;
+    transform: translateY(-6px);
   }
-}
-
-h1 {
-  display: inline;
-  color: white;
 }
 
 .img_portada {
-  height: 250px;
-  flex-shrink: 0;
+  
+  width: 100%;
+  max-height: 250px;
 }
 
 /* Formulario de búsqueda  */
@@ -67,31 +70,32 @@ input {
   height: 38px;
 }
 
-input:focus + label,
+/* input:focus + label,
 input:not(:placeholder-shown) + label {
     top: -10px;
     font-size: 12px;
     background-color: white;
     padding: 2px 5px;
-}
+} */
 
 /* Cambiar el color del texto dentro del input date */
-input[type="date"]::-webkit-datetime-edit-text {
+/* input[type="date"]::-webkit-datetime-edit-text {
     color: white;
-}
+} */
 
 /* Cambiar el color del icono del calendario en Chrome */
-input[type="date"]::-webkit-calendar-picker-indicator {
+/* input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1); 
-}
+} */
 
 button {
+  width: 123px;
+  height: 38px;
   background-color: #023047;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: center;
-  padding: 0.5em 2em;
   border-radius: 1.5em;
 
 }
