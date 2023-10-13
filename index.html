@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>Document</title>
+
+  <title>Sea You Later - Tu Agencia de Cruceros</title>
+
 </head>
 <body>
     <header>
@@ -26,6 +28,52 @@
     </nav>
   </header>
   <main> 
+    <!-- Estructura de la página de inicio -->
+        <section class="portada_section">
+      <div class="titulo tracking-in-expand">
+        <h1>Sea You Later</h1>
+        <h3>Tu Agencia de Cruceros</h3>
+      </div>
+      <img class="img_portada" src="./assets/img/portada_crucero.webp" alt="portada/imagen de un crucero al atardecer">
+    </section>
+
+    <section>
+      <form class="formulario_busqueda">
+        <div class="form-div">
+          <label for="destino">¿A dónde?</label>
+          <input type="text" id="destino" name="destino">
+        </div>
+
+        <div class="form-div">
+          <label for="fecha">¿Cuándo?</label>
+          <input type="text" id="fecha" name="fecha">
+        </div>
+
+        <div class="form-div">
+          <label for="puerto-salida">Puerto de salida</label>
+          <input type="text" id="puerto-salida" name="puerto-salida">
+        </div>
+
+
+        <div class="form-div">
+          <label for="compania">Compañía</label>
+          <input type="text" id="compania" name="compania">
+        </div>
+
+        <div class="form-div">
+          <label for="duracion">¿Duración?</label>
+          <input type="text" id="duracion" name="duracion">
+        </div>
+
+        <div class="form-div">
+          <label for="huespedes">Cantidad de huéspedes</label>
+          <input type="number" id="huespedes" name="huespedes" min="1" max="10">
+        </div>
+
+
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
     <!-- section ofertas de ultimo minuto -->
     <section id="puertos">
       <h2 class="puertos-title">Puertos principales</h2>
