@@ -1,11 +1,58 @@
-@import url(./nosotros.css);
+@import "./home.css";
+@import "./ofertas.css";
+@import "./puertos.css";
+@import "./nosotros.css";
+@import "./formulario.css";
 
-*{
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Inika" sans-serif;
+  --font-secondary: "Inria Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #000;
+  --color-primary: #ffff;
+  --color-secondary: #fff;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-image: url(../assets/img/fondo.webp);
+  margin: 0;
 }
+
+header{
+  width: 100%;
+}
+
+.titulo {
+  text-align: left;
+  margin-bottom: 10px;
+  margin: 5px;
+}
+
+.slider-container li {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 25%;
+  overflow: hidden;
+}
+
+.slider-container li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;

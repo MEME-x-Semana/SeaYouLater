@@ -1,0 +1,9 @@
+.puertos-title {
+  padding-left: 10px;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+.carousel-item {
+  height: 200px;
+}
