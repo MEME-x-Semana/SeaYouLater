@@ -1,0 +1,23 @@
+.companias_section {
+  color: white;
+  
+}
+.companias_section > h2{
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 6rem);
+}
+
+.logos > img {
+  width: clamp(12rem, 20vw, 18rem);
+  transition: transform 0.5s;
+}
+
+.logos > img:hover {
+  transform: scale(1.2);
+}
