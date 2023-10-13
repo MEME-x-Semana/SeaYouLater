@@ -1,0 +1,9 @@
+@import "./style.css";
+
+.puertos-title {
+  color: var(--color-primary);
+}
+
+.carousel-item {
+  height: 200px;
+}
