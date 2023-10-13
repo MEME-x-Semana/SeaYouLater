@@ -4,11 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   <title>Document</title>
 </head>
 
 <body>
-  <h1>Home</h1>
-</body>
+  <div>
+    <h1 class="titulo">
+      Destacados
+    </h1>
+  <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/JDZS6XOJVQD74BLLAGRDGFTA54.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://elcomercio.pe/resizer/7JNUyB2hE5Ct_w5N4Wfu8qx0Fqw=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/XRPSNHBEQZH3RFI6CAEPYHKBAQ.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/05/04/el-crucero-wonder-of-the-seas-de-royal-caribbean-1.jpeg" style="max-width: 100%;height: auto;"></li>
+    </ul>
 
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+</body>
+<script src="./scripts/script.js"></script>
 </html>
