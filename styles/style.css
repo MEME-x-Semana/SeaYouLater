@@ -24,6 +24,9 @@
   box-sizing: border-box;
 }
 
+header{
+  width: 100%;
+}
 body {
   background-image: url(../assets/img/fondo.webp);
 }
