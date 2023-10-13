@@ -1,16 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles/footer.css">
-</head>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>Sea You Later - Tu Agencia de Cruceros</title>
+
+</head>
 <body>
-  <h1>Home</h1>
-  <footer>
+    <header>
+    <nav class="navbar" id="navbar">
+      <img class="icon_menu" src="./assets/img/icon _menu.svg" alt="logo menu hamburguesa">
+      <img class="syl_logo" src="./assets/img/SYL_logo.svg" alt="SeaYouLater logo">
+          <div id="menu" class="menu">
+      <img class="icon_close" src="./assets/img/icon_close.svg" alt="icono de cierre">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Imágenes</a></li>
+        <li><a href="#">Destinos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    </nav>
+  </header>
+  <main> 
+    <!-- Estructura de la página de inicio -->
+        <section class="portada_section">
+      <div class="titulo tracking-in-expand">
+        <h1>Sea You Later</h1>
+        <h3>Tu Agencia de Cruceros</h3>
+      </div>
+      <img class="img_portada" src="./assets/img/portada_crucero.webp" alt="portada/imagen de un crucero al atardecer">
+    </section>
+
+    <section>
+      <form class="formulario_busqueda">
+        <div class="form-div">
+          <label for="destino">¿A dónde?</label>
+          <input type="text" id="destino" name="destino">
+        </div>
+
+        <div class="form-div">
+          <label for="fecha">¿Cuándo?</label>
+          <input type="text" id="fecha" name="fecha">
+        </div>
+
+        <div class="form-div">
+          <label for="puerto-salida">Puerto de salida</label>
+          <input type="text" id="puerto-salida" name="puerto-salida">
+        </div>
+
+
+        <div class="form-div">
+          <label for="compania">Compañía</label>
+          <input type="text" id="compania" name="compania">
+        </div>
+
+        <div class="form-div">
+          <label for="duracion">¿Duración?</label>
+          <input type="text" id="duracion" name="duracion">
+        </div>
+
+        <div class="form-div">
+          <label for="huespedes">Cantidad de huéspedes</label>
+          <input type="number" id="huespedes" name="huespedes" min="1" max="10">
+        </div>
+
+
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+    
+    <!-- CARRUSEL DESTACADOS -->
+      <div>
+    <h1 class="titulo">
+      Destacados
+    </h1>
+  <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/JDZS6XOJVQD74BLLAGRDGFTA54.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://elcomercio.pe/resizer/7JNUyB2hE5Ct_w5N4Wfu8qx0Fqw=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/XRPSNHBEQZH3RFI6CAEPYHKBAQ.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/05/04/el-crucero-wonder-of-the-seas-de-royal-caribbean-1.jpeg" style="max-width: 100%;height: auto;"></li>
+    </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>         
+    <!-- section ofertas de ultimo minuto -->
+    <section id="puertos">
+      <h2 class="puertos-title">Puertos principales</h2>
+      <!-- Cards de ofertas -->
+      <div class="puertos-carrusel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/puerto-1.jpeg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/puertos-2.jpeg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/puertos-3.jpeg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section formulario de contacto -->
+    <section id="fromulario">
+      <h2 class="formulario-title">Formulario de contacto</h2>
+      <!-- formualrio -->
+      <form id="contact-form" class="formulario-form">
+        <div class="formulario-form-name">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="formulario-form-correo">
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="formulario-form-mensaje">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="formulario-form-button">Enviar</button>
+      </form>
+      <div class="spinner-hidden spinner"></div>
+    </section>
+  </main>
+      <footer>
     <div class="footer-text">
       <p>© Todos los derechos re reservados(?</p>
     </div>
@@ -26,5 +169,10 @@
       </a>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+  <script type="module" src="./scripts/sendEmail.js"></script>
 </body>
 </html>
