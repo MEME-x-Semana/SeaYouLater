@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+footer {
+      background-color: rgb(2, 48, 71);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .footer-text {
+      margin-bottom: 10px;
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-icon {
+      margin-right: 10px;
+    }
