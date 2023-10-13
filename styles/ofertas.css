@@ -1,0 +1,56 @@
+.ofertas-title {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  padding-left: 10px;
+}
+
+.ofertas-cards {
+  font-family: var(--font-secondary);
+}
+
+.ofertas-card-1,
+.ofertas-card-2,
+.ofertas-card-3,
+.ofertas-card-4 {
+  width: 296px;
+  height: 209px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.ofertas-card-1 {
+  background-image: url("../assets/img/ofertas-card-1.png");
+}
+
+.ofertas-card-2 {
+  background-image: url("../assets/img/ofertas-card-2.png");
+}
+
+.ofertas-card-3 {
+  background-image: url("../assets/img/ofertas-card-3.png");
+}
+
+.ofertas-card-4 {
+  background-image: url("../assets/img/ofertas-card-4.png");
+}
+
+.ofertas-card-content {
+  border-radius: 30px;
+  width: 296px;
+  height: 209px;
+  background: hsla(0, 0%, 100%, 0.056);
+}
+
+.ofertas-cards h3 {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.ofertas-cards p {
+  margin-top: 50px;
+  padding: 20px;
+  color: var(--color-secondary);
+}
