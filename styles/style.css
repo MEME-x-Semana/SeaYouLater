@@ -1,8 +1,35 @@
 .box {
     width: 200px;
     height: 200px;
-    background-color: lightgray;
-    border: 1px solid gray;
+    background-color: white;
+    border: 1px solid rgb(2, 48, 71);
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
+    font-family: 'Arbutus Slab', sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+    }
+    .box {
+      width: calc(33.33% - 20px);
+    }
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .stars {
+    margin: 5px 0;
+  }
+
+  .stars span {
+    color: gold;
+  }
+
+  .description {
+    font-weight: normal;
   }
