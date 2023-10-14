@@ -1,3 +1,5 @@
+import "./menu.js";
+
 document.addEventListener("DOMContentLoaded", function() {
     const sliderContainer = document.querySelector(".slider-container");
     const nextNav = document.querySelector(".slider-nav-next");

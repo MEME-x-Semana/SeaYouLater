@@ -1,9 +1,3 @@
-.ofertas-title {
-  font-family: var(--font-primary);
-  color: var(--color-primary);
-  padding-left: 10px;
-}
-
 .ofertas-cards {
   font-family: var(--font-secondary);
 }
