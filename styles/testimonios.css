@@ -1,0 +1,39 @@
+.testimonios_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards_testimonios {
+  width: clamp(15rem, 30vw, 24rem);
+  height: clamp(12rem, 0, 14rem);
+  background-color: white;
+  margin: 1rem;
+  padding: clamp(0.8rem, 1rem, 1.5rem);
+  border-radius: 10px;
+  font-family: "Arbutus Slab", sans-serif;
+  transition: transform 0.5s;
+}
+
+.cards_testimonios__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.stars {
+  margin-bottom: 10px ;
+}
+
+.stars span {
+  color: gold;
+}
+
+.cards_testimonios:hover {
+  transform: scale(1.1);
+}
