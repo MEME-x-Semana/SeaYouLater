@@ -10,6 +10,11 @@
 
 .syl_logo{
   width: 3rem;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
+.icon_menu{
+  margin-top: -10px;
+  margin-left: 10px;
+}
