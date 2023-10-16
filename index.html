@@ -42,34 +42,55 @@
 
     <!-- Sección formulario de busqueda -->
     <section>
-      <form class="formulario_busqueda">
+      <form class="formulario_busqueda" id="busqueda_form">
         <div class="form-div">
           <label for="destino">¿A dónde?</label>
-          <input type="text" id="destino" name="destino">
+          <select id="destino" name="destino" required>
+            <option value="" disabled selected>Selecciona un destino</option>
+            <option value="Europa">Europa</option>
+            <option value="America">América</option>
+            <option value="Asia">Asia</option>
+          </select>
         </div>
         <div class="form-div">
-          <label for="fecha">¿Cuándo?</label>
-          <input type="text" id="fecha" name="fecha">
-        </div>
-        <div class="form-div">
-          <label for="puerto-salida">Puerto de salida</label>
-          <input type="text" id="puerto-salida" name="puerto-salida">
+          <label for="puerto-salida">Puerto de salida:</label>
+          <select id="puerto-salida" name="puerto-salida">
+            <option value="" disabled selected>Selecciona un puerto</option>
+            <option value="Puerto 1">Puerto 1</option>
+            <option value="Puerto 2">Puerto 2</option>
+            <option value="Puerto 3">Puerto 3</option>
+          </select>
         </div>
         <div class="form-div">
           <label for="compania">Compañía</label>
-          <input type="text" id="compania" name="compania">
+          <select id="compania" name="compania">
+            <option value="" disabled selected>Selecciona una compañía</option>
+            <option value="MSC">MSC</option>
+            <option value="COSTA">COSTA</option>
+            <option value="Royal">Royal</option>
+          </select>
         </div>
         <div class="form-div">
           <label for="duracion">¿Duración?</label>
-          <input type="text" id="duracion" name="duracion">
+          <select id="duracion" name="duracion">
+            <option value="" disabled selected>Selecciona un periodo de tiempo</option>
+            <option value="">Menos de 10 días</option>
+            <option value="">Más de 10 días</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <label for="fecha">¿Cuándo?</label>
+          <input type="date" id="fecha" name="fecha" required>
         </div>
         <div class="form-div">
           <label for="huespedes">Cantidad de huéspedes</label>
-          <input type="number" id="huespedes" name="huespedes" min="1" max="10">
+          <input type="number" id="huespedes" name="huespedes" min="1" max="10" required>
         </div>
-        <button class="formulario-form-button" type="submit">Buscar</buttonc>
+
+        <button class="formulario-form-button" type="submit">Buscar</button>
       </form>
     </section>
+  
 
     <!-- Sección Carrusel Destacados -->
     <section>
@@ -283,7 +304,6 @@
   <script src="./scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
     defer></script>
-  <script type="module" src="./scripts/sendEmail.js"></script>
 </body>
 
 </html>
