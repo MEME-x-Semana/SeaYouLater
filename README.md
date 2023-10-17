@@ -1,6 +1,3 @@
-# SeaYouLater
-Proyecto Landing Cruceros
-
 # Documentación del Proyecto de Desarrollo Web "See You Later"
 
 ## Introducción
