@@ -1,8 +1,7 @@
-
 .portada_section {
   position: relative;
   top: 40px;
-  width: 100%;  
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,11 +20,14 @@
 
 @keyframes text-shadow-pop-bottom {
   0% {
-    text-shadow: 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c;
+    text-shadow: 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c,
+      0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c;
     transform: translateY(0);
   }
   100% {
-    text-shadow: 0 0.5px #5555555c, 0 1px #5555555c, 0 1.5px #5555555c, 0 2px #5555555c, 0 2.5px #5555555c, 0 3px #5555555c, 0 3.5px #5555555c, 0 4px #5555555c;
+    text-shadow: 0 0.5px #5555555c, 0 1px #5555555c, 0 1.5px #5555555c,
+      0 2px #5555555c, 0 2.5px #5555555c, 0 3px #5555555c, 0 3.5px #5555555c,
+      0 4px #5555555c;
     transform: translateY(-6px);
   }
 }
@@ -36,14 +38,14 @@
 }
 
 /* Formulario de búsqueda  */
-
 .formulario_busqueda {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 3em;
-  gap: 10px;
+  margin-top: 5rem;
+  gap: 35px;
 }
 
 .form-div {
@@ -55,11 +57,10 @@
 }
 
 label {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    transition: 0.3s;
-    pointer-events: none;
+  position: absolute;
+  top: -23px;
+  transition: 0.3s;
+  pointer-events: none;
 }
 
 input {
@@ -68,22 +69,16 @@ input {
   border-radius: 8px;
   width: 300px;
   height: 38px;
+  padding: 0.8rem;
+  color: rgb(86, 86, 86);
 }
 
-/* input:focus + label,
-input:not(:placeholder-shown) + label {
-    top: -10px;
-    font-size: 12px;
-    background-color: white;
-    padding: 2px 5px;
-} */
-
-/* Cambiar el color del texto dentro del input date */
-/* input[type="date"]::-webkit-datetime-edit-text {
-    color: white;
-} */
-
-/* Cambiar el color del icono del calendario en Chrome */
-/* input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1); 
-} */
+select {
+  background-color: rgba(217, 217, 217, 0.2);
+  border: 3px solid white;
+  border-radius: 8px;
+  width: 300px;
+  height: 38px;
+  padding: auto;
+  color: rgb(86, 86, 86);
+}
