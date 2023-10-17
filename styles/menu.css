@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
 .menu {
   position: absolute;
   top: 0;
@@ -8,6 +10,8 @@
   z-index: 1;
   display: none;
   font-family: 'Inika', sans-serif;
+  z-index: 100;
+  position: fixed;
 }
 
 .menu ul {
