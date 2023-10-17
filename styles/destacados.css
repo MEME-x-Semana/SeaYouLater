@@ -1,3 +1,7 @@
+.carousel-item {
+  height: 200px;
+}
+
 .destacados-card-1 {
   background: url("../assets/img/destacados-1.jpg") no-repeat;
   background-size: cover;
@@ -44,7 +48,7 @@
 
 @media (min-width: 800px) {
   .carousel-item {
-    height: 300px;
+    height: 250px;
   }
 
   .carousel-item div h3 {
