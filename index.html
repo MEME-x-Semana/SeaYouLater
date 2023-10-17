@@ -2,201 +2,228 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Sea You Later - Tu Agencia de Cruceros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Sea You Later - Tu Agencia de Cruceros</title>
 </head>
 
 
 <body>
-    <header>
-        <!-- Sección Navbar -->
-        <nav class="navbar" id="navbar">
-            <img class="icon_menu" src="./assets/img/icon _menu.svg" alt="logo menu hamburguesa">
-            <img class="syl_logo" src="./assets/img/SYL_logo.svg" alt="SeaYouLater logo">
-        </nav>
-    </header>
-    <!--Menu desplegable-->
-    <div id="menu2" class="menu">
-        <img class="icon_close" src="./assets/img/icon_close.svg" alt="icono de cierre">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Imágenes</a></li>
-            <li><a href="#">Destinos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </div>
+  <header>
+    <!-- Sección Navbar -->
+    <nav class="navbar" id="navbar">
+      <img class="icon_menu" src="./assets/img/icon _menu.svg" alt="logo menu hamburguesa">
+      <img class="syl_logo" src="./assets/img/SYL_logo.svg" alt="SeaYouLater logo">
+    </nav>
+  </header>
+  <!--Menu desplegable-->
+  <div id="menu2" class="menu">
+    <img class="icon_close" src="./assets/img/icon_close.svg" alt="icono de cierre">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Imágenes</a></li>
+      <li><a href="#">Destinos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main>
     <!-- Sección portada -->
     <section class="portada_section">
-        <div class="titulo tracking-in-expand">
-            <h1>Sea You Later</h1>
-            <h3>Tu Agencia de Cruceros</h3>
-        </div>
-        <img class="img_portada" src="./assets/img/portada_crucero.webp"
-            alt="portada/imagen de un crucero al atardecer">
+      <div class="titulo tracking-in-expand">
+        <h1>Sea You Later</h1>
+        <h3>Tu Agencia de Cruceros</h3>
+      </div>
+      <img class="img_portada" src="./assets/img/portada_crucero.webp" alt="portada/imagen de un crucero al atardecer">
     </section>
+
     <!-- Sección formulario de busqueda -->
     <section>
-        <form class="formulario_busqueda">
-            <div class="form-div">
-                <label for="destino">¿A dónde?</label>
-                <input type="text" id="destino" name="destino">
-            </div>
-            <div class="form-div">
-                <label for="fecha">¿Cuándo?</label>
-                <input type="text" id="fecha" name="fecha">
-            </div>
-            <div class="form-div">
-                <label for="puerto-salida">Puerto de salida</label>
-                <input type="text" id="puerto-salida" name="puerto-salida">
-            </div>
-            <div class="form-div">
-                <label for="compania">Compañía</label>
-                <input type="text" id="compania" name="compania">
-            </div>
-            <div class="form-div">
-                <label for="duracion">¿Duración?</label>
-                <input type="text" id="duracion" name="duracion">
-            </div>
-            <div class="form-div">
-                <label for="huespedes">Cantidad de huéspedes</label>
-                <input type="number" id="huespedes" name="huespedes" min="1" max="10">
-            </div>
-            <button class="formulario-form-button" type="submit">Buscar</buttonc>
-        </form>
+      <form class="formulario_busqueda" id="busqueda_form">
+        <div class="form-div">
+          <label for="destino">¿A dónde?</label>
+          <select id="destino" name="destino" required>
+            <option value="" disabled selected>Selecciona un destino</option>
+            <option value="Europa">Europa</option>
+            <option value="America">América</option>
+            <option value="Asia">Asia</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <label for="puerto-salida">Puerto de salida:</label>
+          <select id="puerto-salida" name="puerto-salida">
+            <option value="" disabled selected>Selecciona un puerto</option>
+            <option value="Puerto 1">Puerto 1</option>
+            <option value="Puerto 2">Puerto 2</option>
+            <option value="Puerto 3">Puerto 3</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <label for="compania">Compañía</label>
+          <select id="compania" name="compania">
+            <option value="" disabled selected>Selecciona una compañía</option>
+            <option value="MSC">MSC</option>
+            <option value="COSTA">COSTA</option>
+            <option value="Royal">Royal</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <label for="duracion">¿Duración?</label>
+          <select id="duracion" name="duracion">
+            <option value="" disabled selected>Selecciona un periodo de tiempo</option>
+            <option value="">Menos de 10 días</option>
+            <option value="">Más de 10 días</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <label for="fecha">¿Cuándo?</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="form-div">
+          <label for="huespedes">Cantidad de huéspedes</label>
+          <input type="number" id="huespedes" name="huespedes" min="1" max="10" required>
+        </div>
+
+        <button class="formulario-form-button" type="submit">Buscar</button>
+      </form>
     </section>
+
 
     <!-- Sección Carrusel Destacados -->
     <section>
-        <h2>Destacados</h2>
-        <div class="swiffy-slider">
-            <ul class="slider-container">
-                <li><img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/JDZS6XOJVQD74BLLAGRDGFTA54.jpg"
-                        style="max-width: 100%;height: auto;"></li>
-                <li><img src="https://elcomercio.pe/resizer/7JNUyB2hE5Ct_w5N4Wfu8qx0Fqw=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/XRPSNHBEQZH3RFI6CAEPYHKBAQ.jpg"
-                        style="max-width: 100%;height: auto;"></li>
-                <li><img src="https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/05/04/el-crucero-wonder-of-the-seas-de-royal-caribbean-1.jpeg"
-                        style="max-width: 100%;height: auto;"></li>
-            </ul>
-            <button type="button" class="slider-nav"></button>
-            <button type="button" class="slider-nav slider-nav-next"></button>
-            <div class="slider-indicators">
-                <button class="active"></button>
-                <button></button>
-                <button></button>
-            </div>
+      <h2>Destacados</h2>
+      <div class="swiffy-slider">
+        <ul class="slider-container">
+          <li><img
+              src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/JDZS6XOJVQD74BLLAGRDGFTA54.jpg"
+              style="max-width: 100%;height: auto;"></li>
+          <li><img
+              src="https://elcomercio.pe/resizer/7JNUyB2hE5Ct_w5N4Wfu8qx0Fqw=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/XRPSNHBEQZH3RFI6CAEPYHKBAQ.jpg"
+              style="max-width: 100%;height: auto;"></li>
+          <li><img
+              src="https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/05/04/el-crucero-wonder-of-the-seas-de-royal-caribbean-1.jpeg"
+              style="max-width: 100%;height: auto;"></li>
+        </ul>
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+        <div class="slider-indicators">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
         </div>
+      </div>
     </section>
 
     <!-- Sección Ofertas -->
     <section id="ofertas">
-        <h2>Ofertas "Utimo minuto"</h2>
-        <!-- Cards de ofertas -->
-        <div class="ofertas-cards">
-            <div class="ofertas-card-1">
-                <div class="ofertas-card-content">
-                    <h3>Mediterráneo</h3>
-                    <p>Disfruta de mucha Historia y sabor</p>
-                </div>
-            </div>
-            <div class="ofertas-card-2">
-                <div class="ofertas-card-content">
-                    <h3>Caribe</h3>
-                    <p> Paraíso bajo el sol.</p>
-                </div>
-            </div>
-            <div class="ofertas-card-3">
-                <div class="ofertas-card-content">
-                    <h3>Asia</h3>
-                    <p>Cultura y exotismo</p>
-                </div>
-            </div>
-            <div class="ofertas-card-4">
-                <div class="ofertas-card-content">
-                    <h3>Sudamerica</h3>
-                    <p>Explora la gran diversidad.</p>
-                </div>
-            </div>
+      <h2>Ofertas "Utimo minuto"</h2>
+      <!-- Cards de ofertas -->
+      <div class="ofertas-cards">
+        <div class="ofertas-card-1">
+          <div class="ofertas-card-content">
+            <h3>Mediterráneo</h3>
+            <p>Disfruta de mucha Historia y sabor</p>
+          </div>
         </div>
+        <div class="ofertas-card-2">
+          <div class="ofertas-card-content">
+            <h3>Caribe</h3>
+            <p> Paraíso bajo el sol.</p>
+          </div>
+        </div>
+        <div class="ofertas-card-3">
+          <div class="ofertas-card-content">
+            <h3>Asia</h3>
+            <p>Cultura y exotismo</p>
+          </div>
+        </div>
+        <div class="ofertas-card-4">
+          <div class="ofertas-card-content">
+            <h3>Sudamerica</h3>
+            <p>Explora la gran diversidad.</p>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- Sección Carrusel Puertos -->
     <section id="puertos">
-        <h2>Puertos principales</h2>
-        <!-- Cards de puertos -->
-        <div class="puertos-carrusel">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/img/puerto-1.jpeg" class="d-block w-100 h-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/puertos-2.jpeg" class="d-block w-100 h-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/puertos-3.jpeg" class="d-block w-100 h-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+      <h2>Puertos principales</h2>
+      <!-- Cards de puertos -->
+      <div class="puertos-carrusel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/puerto-1.jpeg" class="d-block w-100 h-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="./assets/img/puertos-2.jpeg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/puertos-3.jpeg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </section>
+
     <!-- Sección de Logos de Compañías -->
     <section class="companias_section">
-        <h2>Compañías</h2>
-        <div class="logos">
-            <img src="./assets/img/logos_companias/msc_cruises_logo.webp" alt="logo de MSC Cruceros">
-            <img src="./assets/img/logos_companias/royal_caribbean_group_logo.webp" alt="logo de Royal Caribbean Group">
-            <img src="./assets/img/logos_companias/viking_cruises_logo.webp" alt="logo de Viking Cruises">
-            <img src="./assets/img/logos_companias/norwegian-cruise-line-logo.webp" alt="logo de Norwegian Cruise Line">
-            <img src="./assets/img/logos_companias/seabourn_logo.webp" alt="logo de Seabourn">
-            <img src="./assets/img/logos_companias/star_cruises_logo.webp" alt="logo de Star Cruises">
-            <img src="./assets/img/logos_companias/carnival_cruises_logo.webp" alt="logo de Carnival Cruises">
-            <img src="./assets/img/logos_companias/costa-logo.webp" alt="logo de Costa">
-            <img src="./assets/img/logos_companias/aida_logo.webp" alt="logo de AIDA">
-        </div>
+      <h2>Compañías</h2>
+      <div class="logos">
+        <img src="./assets/img/logos_companias/msc_cruises_logo.webp" alt="logo de MSC Cruceros">
+        <img src="./assets/img/logos_companias/royal_caribbean_group_logo.webp" alt="logo de Royal Caribbean Group">
+        <img src="./assets/img/logos_companias/viking_cruises_logo.webp" alt="logo de Viking Cruises">
+        <img src="./assets/img/logos_companias/norwegian-cruise-line-logo.webp" alt="logo de Norwegian Cruise Line">
+        <img src="./assets/img/logos_companias/seabourn_logo.webp" alt="logo de Seabourn">
+        <img src="./assets/img/logos_companias/star_cruises_logo.webp" alt="logo de Star Cruises">
+        <img src="./assets/img/logos_companias/carnival_cruises_logo.webp" alt="logo de Carnival Cruises">
+        <img src="./assets/img/logos_companias/costa-logo.webp" alt="logo de Costa">
+        <img src="./assets/img/logos_companias/aida_logo.webp" alt="logo de AIDA">
+      </div>
     </section>
+
     <!-- Seccion Sobre nosotos" -->
     <section class="sobre_nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una agencia de viajes altamente especializada, nuestra pasión son los cruceros y nuestro conocimiento
-            en el sector es incomparable. Nos enfocamos exclusivamente en la planificación y organización de cruceros,
-            lo
-            que nos convierte en verdaderos expertos en este campo.</p>
-        <p> Nuestro equipo está formado por asesores altamente cualificados que tienen un compromiso constante con la
-            excelencia.
-            Realizamos visitas regulares a los barcos, participamos en seminarios y mantenemos estrechas relaciones con
-            las principales compañías de cruceros. Esta dedicación nos permite ofrecerte un asesoramiento de la más alta
-            calidad en cada etapa de tu viaje.</p>
-        <h4>Lo que nos distingue:</h4>
-        <p><strong>- Atención Personalizada:</strong> Nuestro compromiso es brindarte un servicio altamente
-            personalizado. Entendemos que cada viaje es único, y nos esforzamos por adaptar cada detalle a tus
-            necesidades
-            específicas.</p>
-        <p><strong>- Especialización en Cruceros:</strong> No somos una agencia de viajes común, somos especialistas en
-            cruceros. Esta dedicación nos permite ofrecerte un conocimiento profundo y actualizado de los destinos,
-            barcos
-            y compañías de cruceros.</p>
-        <p><strong>- Navegación Sencilla y Clara:</strong> Nuestra misión es hacerte sentir cómodo y seguro al
-            planificar tu crucero. Nuestra plataforma en línea es intuitiva y fácil de usar, y estamos disponibles para
-            responder a tus preguntas en cualquier
-            momento.</p>
-        <p>Te invitamos a unirte a la experiencia única de viajar en crucero con nosotros, donde la excelencia en el
-            servicio y la
-            pasión por los viajes se unen para crear recuerdos inolvidables.</p>
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una agencia de viajes altamente especializada, nuestra pasión son los cruceros y nuestro conocimiento
+        en el sector es incomparable. Nos enfocamos exclusivamente en la planificación y organización de cruceros,
+        lo
+        que nos convierte en verdaderos expertos en este campo.</p>
+      <p> Nuestro equipo está formado por asesores altamente cualificados que tienen un compromiso constante con la
+        excelencia.
+        Realizamos visitas regulares a los barcos, participamos en seminarios y mantenemos estrechas relaciones con
+        las principales compañías de cruceros. Esta dedicación nos permite ofrecerte un asesoramiento de la más alta
+        calidad en cada etapa de tu viaje.</p>
+      <h4>Lo que nos distingue:</h4>
+      <p><strong>- Atención Personalizada:</strong> Nuestro compromiso es brindarte un servicio altamente
+        personalizado. Entendemos que cada viaje es único, y nos esforzamos por adaptar cada detalle a tus
+        necesidades
+        específicas.</p>
+      <p><strong>- Especialización en Cruceros:</strong> No somos una agencia de viajes común, somos especialistas en
+        cruceros. Esta dedicación nos permite ofrecerte un conocimiento profundo y actualizado de los destinos,
+        barcos
+        y compañías de cruceros.</p>
+      <p><strong>- Navegación Sencilla y Clara:</strong> Nuestra misión es hacerte sentir cómodo y seguro al
+        planificar tu crucero. Nuestra plataforma en línea es intuitiva y fácil de usar, y estamos disponibles para
+        responder a tus preguntas en cualquier
+        momento.</p>
+      <p>Te invitamos a unirte a la experiencia única de viajar en crucero con nosotros, donde la excelencia en el
+        servicio y la
+        pasión por los viajes se unen para crear recuerdos inolvidables.</p>
     </section>
 
     <!-- Sección testimonios -->
@@ -245,10 +272,11 @@
       </div>
 
     </section>
+
     <!-- Sección formulario de contacto -->
     <section id="fromulario">
-        <h2>Formulario de contacto</h2>
-        <!-- formualrio
+      <h2>Formulario de contacto</h2>
+      <!-- formualrio
         <form id="contact-form" class="formulario-form">
           <div class="formulario-form-name">
             <label for="name">Nombre:</label>
@@ -266,30 +294,31 @@
         </form>
         <div class="spinner-hidden spinner"></div> -->
     </section>
-    </main>
-    <footer>
-        <div class="footer-text">
-            <p>© Todos los derechos reservados</p>
-        </div>
-        <div class="footer-icons">
-            <a href="https://www.facebook.com" target="_blank">
-                <img class="footer-icon" src="./assets/img/face.svg" alt="Icono 1">
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img class="footer-icon" src="./assets/img/x.svg" alt="Icono 2">
-            </a>
-            <a href="https://www.https://mail.google.com/mail/u/0/#inbox" target="_blank">
-                <img class="footer-icon" src="./assets/img/mail.svg" alt="Icono 3">
-            </a>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="./scripts/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
-        defer></script>
-    <script type="module" src="./scripts/sendEmail.js"></script>
+  </main>
+
+  <footer>
+    <div class="footer-text">
+      <p>© Todos los derechos reservados</p>
+    </div>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com" target="_blank">
+        <img class="footer-icon" src="./assets/img/face.svg" alt="Icono 1">
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <img class="footer-icon" src="./assets/img/x.svg" alt="Icono 2">
+      </a>
+      <a href="https://www.https://mail.google.com/mail/u/0/#inbox" target="_blank">
+        <img class="footer-icon" src="./assets/img/mail.svg" alt="Icono 3">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
 
 </body>
 
