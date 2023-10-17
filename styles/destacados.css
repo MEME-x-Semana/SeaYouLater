@@ -1,52 +1,61 @@
-.slider-container li {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 25%;
-  overflow: hidden;
-}
-
-.slider-container li img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-  height: 100%;
-}
-
-.box {
-  width: 200px;
+.carousel-item {
   height: 200px;
-  background-color: white;
-  border: 1px solid rgb(2, 48, 71);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  font-family: "Arbutus Slab", sans-serif;
 }
 
-@media (min-width: 768px) {
-  .container {
-    display: flex;
+.destacados-card-1 {
+  background: url("../assets/img/destacados-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.destacados-card-2 {
+  background: url("../assets/img/destacados-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+.destacados-card-3 {
+  background: url("../assets/img/destacados-3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.carousel-item div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #29292998;
+}
+
+.carousel-item div h3 {
+  padding: 0 10px;
+  font-size: 1.3rem;
+  color: #dbdbdba7;
+  text-shadow: #f49e1c 1px 1px;
+  font: bolder;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+}
+
+.carousel-item div p {
+  padding: 0 5px;
+  font-size: 0.6rem;
+  color: #dbdbdba7;
+  text-shadow: #f49e1c 1px 1px;
+  font: bolder;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  .carousel-item {
+    height: 250px;
   }
-  .box {
-    width: calc(33.33% - 20px);
+
+  .carousel-item div h3 {
+    font-size: 1.8rem;
   }
-}
 
-.name {
-  font-weight: bold;
-}
-
-.stars {
-  margin: 5px 0;
-}
-
-.stars span {
-  color: gold;
-}
-
-.description {
-  font-weight: normal;
+  .carousel-item div p {
+    font-size: 1rem;
+  }
 }
