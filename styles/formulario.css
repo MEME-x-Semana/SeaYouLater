@@ -107,3 +107,26 @@
   opacity: 0;
   visibility: hidden;
 }
+
+.formulario_busqueda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .formulario_busqueda {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario_busqueda {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
