@@ -1,5 +1,9 @@
 .ofertas-cards {
   font-family: var(--font-secondary);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
 }
 
 .ofertas-card-1,
@@ -47,4 +51,16 @@
   margin-top: 50px;
   padding: 20px;
   color: var(--color-secondary);
+}
+
+@media (max-width: 1300px) {
+  .ofertas-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .ofertas-cards {
+    grid-template-columns: repeat(1, 1fr); 
+  }
 }
