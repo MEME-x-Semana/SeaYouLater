@@ -1,10 +1,10 @@
 // Barra de navegación
 
 document.addEventListener("DOMContentLoaded", function () {
-  const sliderContainer = document.querySelector(".slider-container");
-  const nextNav = document.querySelector(".slider-nav-next");
-  const prevNav = document.querySelector(".slider-nav-prev");
-  const interval = 2000;
+  const sliderContainer = document.querySelector("#carouselExample");
+  const nextNav = document.querySelector(".carousel-control-next");
+  const prevNav = document.querySelector(".carousel-control-prev");
+  const interval = 3000;
   let slideTimer;
 
   function startSlideTimer() {
