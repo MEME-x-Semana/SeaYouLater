@@ -81,3 +81,9 @@ select {
   padding: auto;
   color: rgb(86, 86, 86);
 }
+
+@media (min-width: 768px) {
+  .titulo {
+    margin-top: 60px;
+  }
+}
