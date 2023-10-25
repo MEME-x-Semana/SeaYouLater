@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 40px;
+}
+
 body {
   background-image: url(../assets/img/fondo.webp);
   background-size: cover;
@@ -30,4 +34,10 @@ section h2 {
   margin: 60px 5px 15px 10px ;
   font-family: var(--font-primary);
   color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 0;
+  }
 }

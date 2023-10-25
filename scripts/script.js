@@ -100,3 +100,15 @@ async function handleSubmit(e) {
       spinner.classList.add("spinner-hidden");
     });
 }
+
+
+// Cambio de color de navbar
+
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar2');
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
