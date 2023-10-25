@@ -17,7 +17,8 @@
 .form-container-nameAndEmail {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
+  margin: auto;
 }
 
 .formulario-form ::placeholder {
@@ -27,7 +28,7 @@
 
 .formulario-form-name,
 .formulario-form-correo {
-  width: 50%;
+  width: 100%;
   margin: 5px auto;
 }
 
@@ -129,17 +130,40 @@
   .form-container-nameAndEmail {
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 60%;
     margin: auto;
     justify-content: space-between;
   }
+
   .formulario-form-name,
   .formulario-form-correo {
-    width: 50%;
-    margin: 2px;
+    width: 49%;
   }
+
   .formulario-form-mensaje {
-    width: 40%;
+    width: 60%;
+  }
+
+  .formulario-form-name input,
+  .formulario-form-correo input,
+  .formulario-form-mensaje textarea {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-container-nameAndEmail {
+    width: 50%;
+  }
+
+  .formulario-form-mensaje {
+    width: 50%;
+  }
+
+  .formulario-form-name input,
+  .formulario-form-correo input,
+  .formulario-form-mensaje textarea {
+    font-size: large;
   }
 }
 
