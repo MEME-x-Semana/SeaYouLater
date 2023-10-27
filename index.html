@@ -59,50 +59,63 @@
 
     <!-- Sección formulario de busqueda -->
     <section>
-      <form class="formulario_busqueda" id="busqueda_form">
-        <div class="form-div">
-          <label for="destino">¿A dónde?</label>
-          <select id="destino" name="destino" required>
-            <option value="" disabled selected>Selecciona un destino</option>
-            <option value="Europa">Europa</option>
-            <option value="America">América</option>
-            <option value="Asia">Asia</option>
-          </select>
+      <form class="form_busqueda_contenedor" id="busqueda_form">
+        <div class="formulario_busqueda">
+          <div class="form-div">
+            <label for="destino">¿A dónde?</label>
+            <select id="destino" name="destino" required>
+              <option value="" disabled selected>Destino</option>
+              <option value="Europa">Europa</option>
+              <option value="America del Norte">América del Norte</option>
+              <option value="Centroamérica">Centroamérica</option>
+              <option value="America del Sur">América del Sur</option>
+              <option value="Asia">Asia</option>
+            </select>
+          </div>
+          <div class="form-div">
+            <label for="puerto-salida">Salida desde:</label>
+            <select id="puerto-salida" name="puerto-salida">
+              <option value="" disabled selected>Salida</option>
+              <option value="Europa">Europa</option>
+              <option value="America del Norte">América del Norte</option>
+              <option value="Centroamérica">Centroamérica</option>
+              <option value="America del Sur">América del Sur</option>
+              <option value="Asia">Asia</option>
+            </select>
+          </div>
+          <div class="form-div">
+            <label for="compania">Compañía</label>
+            <select id="compania" name="compania">
+              <option value="" disabled selected>Compañía</option>
+              <option value="MSC">MSC</option>
+              <option value="COSTA">COSTA</option>
+              <option value="Royal">Royal</option>
+              <option value="Viking">Viking</option>
+              <option value="Star Cruises">Star Cruises</option>
+              <option value="Carnival">Carnival</option>
+              <option value="AIDA">AIDA</option>
+              <option value="Seabourn">Seabourn</option>
+              <option value="Norwegian">Norwegian</option>
+            </select>
+          </div>
+          <div class="form-div">
+            <label for="duracion">¿Duración?</label>
+            <select id="duracion" name="duracion">
+              <option value="" disabled selected>Duración</option>
+              <option value="">Menos de 10 días</option>
+              <option value="">Más de 10 días</option>
+            </select>
+          </div>
+          <div class="form-div">
+            <label for="fecha">¿Cuándo?</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+          <div class="form-div">
+            <label for="huespedes">Cantidad de Huéspedes</label>
+            <input type="number" id="huespedes" name="huespedes" min="1" max="10" required>
+          </div>
         </div>
-        <div class="form-div">
-          <label for="puerto-salida">Puerto de salida:</label>
-          <select id="puerto-salida" name="puerto-salida">
-            <option value="" disabled selected>Selecciona un puerto</option>
-            <option value="Puerto 1">Puerto 1</option>
-            <option value="Puerto 2">Puerto 2</option>
-            <option value="Puerto 3">Puerto 3</option>
-          </select>
-        </div>
-        <div class="form-div">
-          <label for="compania">Compañía</label>
-          <select id="compania" name="compania">
-            <option value="" disabled selected>Selecciona una compañía</option>
-            <option value="MSC">MSC</option>
-            <option value="COSTA">COSTA</option>
-            <option value="Royal">Royal</option>
-          </select>
-        </div>
-        <div class="form-div">
-          <label for="duracion">¿Duración?</label>
-          <select id="duracion" name="duracion">
-            <option value="" disabled selected>Selecciona un periodo de tiempo</option>
-            <option value="">Menos de 10 días</option>
-            <option value="">Más de 10 días</option>
-          </select>
-        </div>
-        <div class="form-div">
-          <label for="fecha">¿Cuándo?</label>
-          <input type="date" id="fecha" name="fecha" required>
-        </div>
-        <div class="form-div">
-          <label for="huespedes">Cantidad de huéspedes</label>
-          <input type="number" id="huespedes" name="huespedes" min="1" max="10" required>
-        </div>
+
 
         <button class="formulario-form-button" type="submit">Buscar</button>
       </form>
@@ -297,13 +310,13 @@
     </div>
     <div class="footer-icons">
       <a href="https://www.facebook.com" target="_blank">
-        <img class="footer-icon" src="./assets/img/face.svg" alt="Icono 1">
+        <img class="footer-icon" src="./assets/img/face.svg" alt="logo de facebook">
       </a>
       <a href="https://www.twitter.com" target="_blank">
-        <img class="footer-icon" src="./assets/img/x.svg" alt="Icono 2">
+        <img class="footer-icon" src="./assets/img/x.svg" alt="logo de twiter">
       </a>
       <a href="https://www.https://mail.google.com/mail/u/0/#inbox" target="_blank">
-        <img class="footer-icon" src="./assets/img/mail.svg" alt="Icono 3">
+        <img class="footer-icon" src="./assets/img/mail.svg" alt="logo/dibujo de una carta/correo electrónico">
       </a>
     </div>
   </footer>
