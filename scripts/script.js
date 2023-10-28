@@ -105,10 +105,13 @@ async function handleSubmit(e) {
 // Cambio de color de navbar
 
 window.addEventListener('scroll', function() {
-  const navbar = document.querySelector('.navbar2');
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  if (window.innerWidth >= 768) {
+    const navbar = document.querySelector('.navbar2');
+    if (window.pageYOffset > 0) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
   }
 });
+
