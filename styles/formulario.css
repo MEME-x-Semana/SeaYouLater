@@ -1,8 +1,3 @@
-.formulario-title {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
 .formulario-form {
   font-family: var(--font-secondary);
   color: var(--color-primary);
@@ -117,20 +112,14 @@
 
 @media (min-width: 768px) {
   .form-container-nameAndEmail {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    margin: auto;
-    justify-content: space-between;
-  }
-
-  .formulario-form-name,
-  .formulario-form-correo {
-    width: 49%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
   }
 
   .formulario-form-mensaje {
-    width: 60%;
+    width: 50%;
   }
 
   .formulario-form-name input,
@@ -142,11 +131,11 @@
 
 @media (min-width: 1024px) {
   .form-container-nameAndEmail {
-    width: 50%;
+    width: 40%;
   }
 
   .formulario-form-mensaje {
-    width: 50%;
+    width: 40%;
   }
 
   .formulario-form-name input,
