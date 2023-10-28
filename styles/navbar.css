@@ -17,10 +17,9 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
   padding-top: 3rem;
 }
 
@@ -31,10 +30,6 @@
 .menu ul li a {
   color: #fff;
   text-decoration: none;
-}
-
-.menu.open {
-  display: block;
 }
 
 .menu.open .icon_close {
@@ -52,130 +47,82 @@
 }
 
 .navbar2 {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 100;
-  position: fixed;
-  transition: background-color 0.3s;
+    width :100%; 
+    height :40px; 
+    display :flex; 
+    justify-content :space-between; 
+    align-items: flex-start;
+    z-index :100; 
+    position :fixed; 
+    transition :background-color .3s; 
 }
 
 .navbar2.scrolled {
-  background-color: rgba(2, 48, 71, 0.75);
+    background-color :rgba(2,48,71,0.75); 
 }
 
 .nav-items {
-  display: flex;
+    display:flex; 
 }
 
 .nav-items > a {
-  margin-right: 3rem;
+    margin-right :3rem; 
 }
 
 .nav-item {
-  display: none;
-  color: #fff;
-  text-decoration: none;
-  transition: font-weight 0.3s ease-in-out;
+    display:none; 
+    color:#fff; 
+    text-decoration:none; 
+    transition : font-weight .3s ease-in-out; 
 }
 
 .nav-item:hover {
-  font-weight: 600;
-  border-bottom: 1px solid var(--color-primary);
-  border-radius: 10%;
+    font-weight :600; 
+    border-bottom :1px solid var(--color-primary); 
+    border-radius :10%; 
 }
 
 .syl_logo {
-  width: 3rem;
-  margin-right: 10px;
-  margin-top: 8px;
-  transition: font-weight 0.3s ease-in-out;
+    width :3rem;
+    margin-right :10px; 
+    margin-top :8px; 
+    transition : font-weight .3s ease-in-out; 
 }
 
 .syl_logo:hover {
-  font-weight: 600;
+    font-weight :600; 
 }
 
 .icon_menu {
-  margin-left: 10px;
-  cursor: pointer;
+    cursor:pointer;
+    margin-right: auto;
+    margin-left: 10px;
 }
 
-@media (min-width: 768px) {
-  .navbar2 {
-    background-color: transparent;
-  }
+@media (min-width :768px) {
 
-  .nav-items {
-    margin-left: 1rem;
-  }
+.navbar2 {
+    background-color :transparent;
+}
 
-  .nav-item {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 1rem;
-    align-self: center;
-  }
+.nav-items {
+    margin-left :1rem;
+    margin-top: 5px;
+}
 
-  .icon_menu {
-    display: none;
-  }
+.nav-item {
+    display:block; 
+    color:#fff; 
+    text-decoration:none; 
+    margin-right :1rem; 
+    align-self:center; 
+}
 
-  .menu {
-    display: none !important;
-  }
+.icon_menu {
+    display:none; 
 }
 
 .menu {
-  width: 200px;
-  height: 100%;
-  top: 0;
-  left: 0;
+    display:none !important; 
 }
-
-.menu ul {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.menu ul li {
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 767px) {
-  .navbar2 {
-    justify-content: flex-start;
-  }
-
-  .syl_logo {
-    margin-left: auto;
-    margin-right: 10px;
-  }
-
-  .icon_menu {
-    margin-right: auto;
-    margin-left: 10px;
-  }
-
-  .menu {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  .menu ul {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .menu ul li {
-    margin: 1rem 0;
-  }
 }
