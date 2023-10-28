@@ -139,13 +139,13 @@ input {
   }
 
   .form-div{
-    width: clamp(10rem, 20vw, 15rem);
+    width: clamp(8rem, 18vw, 13rem);
     max-width: 100vh;
   }
 
   select,
   input {
-    width: clamp(8rem, 18vw, 12rem);
+    width: clamp(7rem, 17vw, 11rem);
     height: 6rem;
     margin: 0;
     padding: 0;
