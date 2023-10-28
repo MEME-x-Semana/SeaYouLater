@@ -121,6 +121,7 @@ input {
 
   .form_busqueda_contenedor {
     padding: 0 2rem;
+    overflow: hidden;
   }
 
   .form_busqueda_contenedor > button {
