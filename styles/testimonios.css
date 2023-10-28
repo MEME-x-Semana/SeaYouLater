@@ -12,7 +12,7 @@
   margin: 1rem;
   padding: clamp(0.8rem, 1rem, 1.5rem);
   border-radius: 10px;
-  font-family: "Arbutus Slab", sans-serif;
+  font-family: var(--font-secondary);
   transition: transform 0.5s;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .stars {
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 
 .stars span {
@@ -37,7 +37,6 @@
 .cards_testimonios:hover {
   transform: scale(1.1);
 }
-
 
 @media (max-width: 1300px) {
   .testimonios_container {
@@ -50,4 +49,5 @@
   .testimonios_container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-}}
+  }
+}
