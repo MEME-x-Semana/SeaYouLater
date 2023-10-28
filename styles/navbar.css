@@ -108,7 +108,7 @@
 
     .nav-items {
         margin-left: 1rem;
-        margin-top: 5px;
+        margin-top: 6px;
     }
 
     .nav-item {
@@ -120,7 +120,7 @@
     }
 
     .icon_menu {
-        display: none;
+        display: none !important;
     }
 
     .menu {

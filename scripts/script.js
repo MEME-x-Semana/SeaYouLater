@@ -42,27 +42,26 @@ closeIcon.addEventListener("click", () => {
 });
 
 function toggleMenu() {
+  if (window.innerWidth <= 768) {
   if (menu.style.display === "none") {
     menu.style.display = "block";
+    menuIcon.style.display = "none";
     document.addEventListener("click", closeMenuOnClickOutside);
   } else {
     menu.style.display = "none";
+    menuIcon.style.display = "block"
     document.removeEventListener("click", closeMenuOnClickOutside);
   }
 }
+}
 
 function closeMenu() {
+  if (window.innerWidth <= 768) {
   menu.style.display = "none";
+  menuIcon.style.display = "block";
   document.removeEventListener("click", closeMenuOnClickOutside);
 }
-
-function closeMenuOnClickOutside(event) {
-  if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
-    closeMenu();
-  }
 }
-
-
 
 //Formulario de envío // Llamado de API
 
