@@ -126,6 +126,7 @@ input {
 
   .form_busqueda_contenedor > button {
     margin-top: 50px;
+    margin-bottom: 5rem;
   }
 
   .formulario_busqueda {

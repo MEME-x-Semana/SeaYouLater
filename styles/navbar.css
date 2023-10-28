@@ -20,6 +20,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
+  padding-top: 3rem;
 }
 
 .menu ul li {
