@@ -22,18 +22,16 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 - Organizamos nuestro trabajo en GitHub, creando una organización para el proyecto y aprovechando la funcionalidad de proyectos para gestionar las tareas.
 - Las tareas se dividieron entre los miembros del equipo, permitiendo a cada uno trabajar en distintas áreas.
 - Se llevaron a cabo reuniones semanales para revisar el código desarrollado por cada miembro y para fusionarlo en GitHub una vez aprobado.
-- 
   
 ## Tecnologías utilizadas
 - HTML
 - CSS
 - JavaScript
 - Bootstrap
-- 
 
 ## Funcionalidades y características
 - Diseño Responsive (mobile, tablet, desktop) 
-- API?
+- API "FormSubmit"
 
 ## Conclusión
 El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La página landing page de la agencia de cruceros "See You Later" está ahora lista para su lanzamiento.
@@ -42,5 +40,11 @@ El proyecto de desarrollo web "See You Later" se ha completado con éxito gracia
 Queremos expresar nuestro agradecimiento a los miembros del equipo y a todos los que contribuyeron a la realización de este proyecto.
 
 ## Referencias
-- Enlaces a recursos utilizados.
-- Información de contacto del equipo.
+- Enlaces a recursos utilizados:
+    - https://fonts.googleapis.com/css2?family=Inika&display=swap
+    - https://formsubmit.co/
+
+- Información de contacto del equipo:
+    - axelivancriado@gmail.com
+    - fabrib40@gmail.com
+    - fbrig87@gmail.com
