@@ -4,9 +4,9 @@
 Este repositorio contiene la documentación detallada del proyecto de desarrollo web "See You Later", realizado como parte del curso/beca de "Codo a Codo": Full Stack Python 2023. Nuestro equipo, compuesto por tres miembros, trabajó de manera colaborativa en la creación de una página tipo landing page para la agencia ficticia de cruceros "See You Later", con el propósito de vender pasajes de cruceros de distintas compañías.
 
 ## Equipo
-- [Axel Criado]
-- [Fabricio Barreto]
-- [Flavia S. Briglia]
+- Axel Criado
+- Fabricio Barreto
+- Flavia S. Briglia
 
 ## Fase de Inicio
 En el primer mes de nuestro proyecto, llevamos a cabo reuniones virtuales para conocernos, debatir las ideas y establecer los objetivos del proyecto.
