@@ -16,12 +16,12 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 
 ## Diseño y Planificación
 - Utilizamos la herramienta Figma para crear el diseño y wireframe del sitio.
-- El diseño fue revisado y aprobado por todo el equipo de diseño antes de proceder a la implementación.
+- El diseño fue revisado y aprobado por todo el equipo, antes de proceder a la implementación.
 
 ## Desarrollo
 - Organizamos nuestro trabajo en GitHub, creando una organización para el proyecto y aprovechando la funcionalidad de proyectos para gestionar las tareas.
 - Las tareas se dividieron entre los miembros del equipo, permitiendo a cada uno trabajar en distintas áreas.
-- Se llevaron a cabo reuniones semanales para revisar el código desarrollado por cada miembro y para fusionarlo en GitHub una vez aprobado.
+- Se llevaron a cabo reuniones semanales para revisar el código desarrollado por cada miembro y para fusionarlo en GitHub, una vez aprobado.
   
 ## Tecnologías utilizadas
 - HTML
@@ -31,13 +31,10 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 
 ## Funcionalidades y características
 - Diseño Responsive (mobile, tablet, desktop) 
-- API "FormSubmit"
+- La API Rest de FormSubmit (formsubmit.co), hace que el formulario de contacto sea 100% funcional.
 
 ## Conclusión
-El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La página landing page de la agencia de cruceros "See You Later" está ahora lista para su lanzamiento.
-
-## Agradecimientos
-Queremos expresar nuestro agradecimiento a los miembros del equipo y a todos los que contribuyeron a la realización de este proyecto.
+El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La landing page de la agencia de cruceros "See You Later" puede ser visitada en: [SeaYouLater](https://meme-x-semana.github.io/SeaYouLater/)
 
 ## Referencias
 - Enlaces a recursos utilizados:
