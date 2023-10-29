@@ -36,11 +36,4 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 - La API Rest de FormSubmit (formsubmit.co), hace que el formulario de contacto sea 100% funcional.
 
 ## Conclusión
-El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La landing page de la agencia de cruceros "See You Later" puede ser visitada en:
-
-[click aquí](https://meme-x-semana.github.io/SeaYouLater/)
-
-
-## Referencias
-- Enlaces a recursos utilizados.
-- Información de contacto del equipo.
+El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La landing page de la agencia de cruceros "See You Later" puede ser visitada en: [SeaYouLater](https://meme-x-semana.github.io/SeaYouLater/)
