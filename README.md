@@ -33,13 +33,10 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 
 ## Funcionalidades y características
 - Diseño Responsive (mobile, tablet, desktop) 
-- API?
+- La API Rest de FormSubmit (formsubmit.co), hace que el formulario de contacto sea 100% funcional.
 
 ## Conclusión
 El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La página landing page de la agencia de cruceros "See You Later" está ahora lista para su lanzamiento.
-
-## Agradecimientos
-Queremos expresar nuestro agradecimiento a los miembros del equipo y a todos los que contribuyeron a la realización de este proyecto.
 
 ## Referencias
 - Enlaces a recursos utilizados.
