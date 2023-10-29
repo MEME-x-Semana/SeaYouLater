@@ -16,7 +16,7 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 
 ## Diseño y Planificación
 - Utilizamos la herramienta Figma para crear el diseño y wireframe del sitio.
-- El diseño fue revisado y aprobado por todo el equipo de diseño antes de proceder a la implementación.
+- El diseño fue revisado y aprobado por todo el equipo, antes de proceder a la implementación.
 
 ## Desarrollo
 - Organizamos nuestro trabajo en GitHub, creando una organización para el proyecto y aprovechando la funcionalidad de proyectos para gestionar las tareas.
