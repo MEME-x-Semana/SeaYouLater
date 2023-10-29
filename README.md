@@ -21,15 +21,13 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 ## Desarrollo
 - Organizamos nuestro trabajo en GitHub, creando una organización para el proyecto y aprovechando la funcionalidad de proyectos para gestionar las tareas.
 - Las tareas se dividieron entre los miembros del equipo, permitiendo a cada uno trabajar en distintas áreas.
-- Se llevaron a cabo reuniones semanales para revisar el código desarrollado por cada miembro y para fusionarlo en GitHub una vez aprobado.
-- 
+- Se llevaron a cabo reuniones semanales para revisar el código desarrollado por cada miembro y para fusionarlo en GitHub, una vez aprobado.
   
 ## Tecnologías utilizadas
 - HTML
 - CSS
 - JavaScript
 - Bootstrap
-- 
 
 ## Funcionalidades y características
 - Diseño Responsive (mobile, tablet, desktop) 
@@ -37,3 +35,13 @@ Luego de un proceso de deliberación y generación de ideas, decidimos desarroll
 
 ## Conclusión
 El proyecto de desarrollo web "See You Later" se ha completado con éxito gracias al esfuerzo y la colaboración de nuestro equipo. La landing page de la agencia de cruceros "See You Later" puede ser visitada en: [SeaYouLater](https://meme-x-semana.github.io/SeaYouLater/)
+
+## Referencias
+- Enlaces a recursos utilizados:
+    - https://fonts.googleapis.com/css2?family=Inika&display=swap
+    - https://formsubmit.co/
+
+- Información de contacto del equipo:
+    - axelivancriado@gmail.com
+    - fabrib40@gmail.com
+    - fbrig87@gmail.com
