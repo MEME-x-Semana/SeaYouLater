@@ -41,7 +41,7 @@ closeIcon.addEventListener("click", () => {
   closeMenu();
 });
 
-function toggleMenu() {
+/*function toggleMenu() {
   if (window.innerWidth <= 768) {
   if (menu.style.display === "none") {
     menu.style.display = "block";
@@ -61,7 +61,7 @@ function closeMenu() {
   menuIcon.style.display = "block";
   document.removeEventListener("click", closeMenuOnClickOutside);
 }
-}
+}*/
 
 //Formulario de envío // Llamado de API
 
