@@ -41,27 +41,25 @@ closeIcon.addEventListener("click", () => {
   closeMenu();
 });
 
-/*function toggleMenu() {
+function toggleMenu() {
   if (window.innerWidth <= 768) {
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-    menuIcon.style.display = "none";
-    document.addEventListener("click", closeMenuOnClickOutside);
-  } else {
-    menu.style.display = "none";
-    menuIcon.style.display = "block"
-    document.removeEventListener("click", closeMenuOnClickOutside);
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+      menuIcon.style.display = "none";
+    } else {
+      menu.style.display = "none";
+      menuIcon.style.display = "block";
+    }
   }
-}
 }
 
 function closeMenu() {
   if (window.innerWidth <= 768) {
-  menu.style.display = "none";
-  menuIcon.style.display = "block";
-  document.removeEventListener("click", closeMenuOnClickOutside);
+    menu.style.display = "none";
+    menuIcon.style.display = "block";
+  }
 }
-}*/
+
 
 //Formulario de envío // Llamado de API
 
