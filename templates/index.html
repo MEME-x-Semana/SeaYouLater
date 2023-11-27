@@ -1,17 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
   <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-    crossorigin="anonymous">
+    crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="{% static './css/style.css' %}" />
   <title>Sea You Later - Tu Agencia de Cruceros</title>
 </head>
-
 
 <body>
   <header>
@@ -24,12 +26,12 @@
         <a href="#nosotros" class="nav-item">Sobre Nosotros</a>
         <a href="#fromulario" class="nav-item">Contacto</a>
       </div>
-      <img class="icon_menu" src="./assets/img/icon _menu.svg" alt="logo menu hamburguesa">
-      <a href="#"><img class="syl_logo" src="./assets/img/SYL_logo.svg" alt="SeaYouLater logo"></a>
+      <img class="icon_menu" src="{% static './media/img/icon _menu.svg' %}" alt="logo menu hamburguesa">
+      <a href="#"><img class="syl_logo" src="{% static './media/img/SYL_logo.svg' %}" alt="SeaYouLater logo"></a>
 
       <!--Menu desplegable / mobile-->
       <div id="menu2" class="menu">
-        <img class="icon_close" src="./assets/img/icon_close.svg" alt="icono de cierre">
+        <img class="icon_close" src="{% static './media/img/icon_close.svg' %}" alt="icono de cierre">
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#destacados">Destacados</a></li>
@@ -48,9 +50,9 @@
         <h1>Sea You Later</h1>
         <h3>Tu Agencia de Cruceros</h3>
       </div>
-      <img class="img_portada_xs" src="./assets/img/cruceroXS.webp" alt="portada/imagen de un crucero al atardecer">
-      <img class="img_portada_sm" src="./assets/img/cruceroSM.webp" alt="portada/imagen de un crucero al atardecer">
-      <img class="img_portada_xl" src="./assets/img/cruceroXL.webp" alt="portada/imagen de un crucero al atardecer">
+      <img class="img_portada_xs" src="{% static './media/img/cruceroXS.webp' %}" alt="portada/imagen de un crucero al atardecer">
+      <img class="img_portada_sm" src="{% static './media/img/cruceroSM.webp' %}" alt="portada/imagen de un crucero al atardecer">
+      <img class="img_portada_xl" src="{% static './media/img/cruceroXL.webp' %}" alt="portada/imagen de un crucero al atardecer">
     </section>
 
     <!-- Sección formulario de busqueda -->
@@ -201,7 +203,7 @@
     <section class="parallax-container">
       <div class="parallax-video">
         <video class="video" autoplay loop muted>
-          <source src="./assets/video_crucero.mp4" type="video/mp4">
+          <source src="{% static './media/video_crucero.mp4' %}" type="video/mp4">
           Tu navegador no soporta la reproducción de videos.
         </video>
       </div>
@@ -212,15 +214,15 @@
     <section id="companias" class="companias_section">
       <h2>Compañías</h2>
       <div class="logos">
-        <img src="./assets/img/logos_companias/msc_cruises_logo.webp" alt="logo de MSC Cruceros">
-        <img src="./assets/img/logos_companias/royal_caribbean_group_logo.webp" alt="logo de Royal Caribbean Group">
-        <img src="./assets/img/logos_companias/viking_cruises_logo.webp" alt="logo de Viking Cruises">
-        <img src="./assets/img/logos_companias/norwegian-cruise-line-logo.webp" alt="logo de Norwegian Cruise Line">
-        <img src="./assets/img/logos_companias/seabourn_logo.webp" alt="logo de Seabourn">
-        <img src="./assets/img/logos_companias/star_cruises_logo.webp" alt="logo de Star Cruises">
-        <img src="./assets/img/logos_companias/carnival_cruises_logo.webp" alt="logo de Carnival Cruises">
-        <img src="./assets/img/logos_companias/costa-logo.webp" alt="logo de Costa">
-        <img src="./assets/img/logos_companias/aida_logo.webp" alt="logo de AIDA">
+        <img src="{% static './media/img/logos_companias/msc_cruises_logo.webp' %}" alt="logo de MSC Cruceros">
+        <img src="{% static './media/img/logos_companias/royal_caribbean_group_logo.webp' %}" alt="logo de Royal Caribbean Group">
+        <img src="{% static './media/img/logos_companias/viking_cruises_logo.webp' %}" alt="logo de Viking Cruises">
+        <img src="{% static './media/img/logos_companias/norwegian-cruise-lin' %}e-logo.webp" alt="logo de Norwegian Cruise Line">
+        <img src="{% static './media/img/logos_companias/seabourn_logo.webp' %}" alt="logo de Seabourn">
+        <img src="{% static './media/img/logos_companias/star_cruises_logo.webp' %}" alt="logo de Star Cruises">
+        <img src="{% static './media/img/logos_companias/carnival_cruises_logo.webp' %}" alt="logo de Carnival Cruises">
+        <img src="{% static './media/img/logos_companias/costa-logo.webp' %}" alt="logo de Costa">
+        <img src="{% static './media/img/logos_companias/aida_logo.webp' %}" alt="logo de AIDA">
       </div>
     </section>
 
@@ -330,13 +332,13 @@
     </div>
     <div class="footer-icons">
       <a href="https://www.facebook.com" target="_blank">
-        <img class="footer-icon" src="./assets/img/face.svg" alt="Icono 1">
+        <img class="footer-icon" src="{% static './media/img/face.svg' %}" alt="Icono 1">
       </a>
       <a href="https://www.twitter.com" target="_blank">
-        <img class="footer-icon" src="./assets/img/x.svg" alt="Icono 2">
+        <img class="footer-icon" src="{% static './media/img/x.svg' %}" alt="Icono 2">
       </a>
       <a href="https://www.https://mail.google.com/mail/u/0/#inbox" target="_blank">
-        <img class="footer-icon" src="./assets/img/mail.svg" alt="Icono 3">
+        <img class="footer-icon" src="{% static './media/img/mail.svg' %}" alt="Icono 3">
       </a>
     </div>
   </footer>
@@ -345,10 +347,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script src="./scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
     defer></script>
-
+  <script src="{% static './js/script.js' %}"></script>
 </body>
 
 </html>

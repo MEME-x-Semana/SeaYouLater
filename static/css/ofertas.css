@@ -108,45 +108,45 @@
 }
 
 .img1 {
-  background-image: url("../assets/img/ofertas/mediterraneo.webp");
+  background-image: url("/static/media/img/ofertas/mediterraneo.webp");
   color: white;
   background-size: cover;
 }
 .img1__back {
-  background-image: url("../assets/img/ofertas/ofertas-card-1.webp");
+  background-image: url("/static/media/img/ofertas/ofertas-card-1.webp");
   color: white;
   background-size: cover;
 }
 
 .img2 {
-  background-image: url("../assets/img/ofertas/caribe.webp");
+  background-image: url("/static/media/img/ofertas/caribe.webp");
   color: white;
   background-size: cover;
 }
 .img2__back {
-  background-image: url("../assets/img/ofertas/ofertas-card-2.webp");
+  background-image: url("/static/media/img/ofertas/ofertas-card-2.webp");
   color: white;
   background-size: cover;
 }
 
 .img3 {
-  background-image: url("../assets/img/ofertas/asia.webp");
+  background-image: url("/static/media/img/ofertas/asia.webp");
   color: white;
   background-size: cover;
 }
 .img3__back {
-  background-image: url("../assets/img/ofertas/ofertas-card-3.webp");
+  background-image: url("/static/media/img/ofertas/ofertas-card-3.webp");
   color: white;
   background-size: cover;
 }
 
 .img4 {
-  background-image: url("../assets/img/ofertas/sudamerica.webp");
+  background-image: url("/static/media/img/ofertas/sudamerica.webp");
   color: white;
   background-size: cover;
 }
 .img4__back {
-  background-image: url("../assets/img/ofertas/ofertas-card-4.webp");
+  background-image: url("/static/media/img/ofertas/ofertas-card-4.webp");
   color: white;
   background-size: cover;
 }

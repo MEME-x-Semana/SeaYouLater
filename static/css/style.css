@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-image: url(../assets/img/fondo.webp);
+  background-image: url('/static/media/img/fondo.webp');
   background-size: cover;
 }
 

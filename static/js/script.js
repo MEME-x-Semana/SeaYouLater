@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const menu = document.getElementById("menu2");
 const menuIcon = document.querySelector(
-  'img[src="./assets/img/icon _menu.svg"]'
+  'img[alt$="logo menu hamburguesa"]'
 );
 const closeIcon = document.querySelector(".icon_close");
 
