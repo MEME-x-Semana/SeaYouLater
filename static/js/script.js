@@ -112,3 +112,38 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+
+
+// Vinculación Formulario con Aplicación
+
+document.getElementById('busqueda_form').addEventListener('submit', function(event) {
+  // Prevenir el comportamiento de envío de formulario predeterminado
+  event.preventDefault();
+
+  // Recoger los datos del formulario
+  var destino = document.getElementById('destino').value;
+  var salida = document.getElementById('puerto-salida').value;
+  var compania = document.getElementById('compania').value;
+
+  // Enviar una solicitud HTTP a tu API
+  fetch('http://127.0.0.1:8000/api/reservas/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      destino: destino,
+      salida: salida,
+      compania: compania,
+    }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Manejar la respuesta de la API
+    console.log('Success:', data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+});
